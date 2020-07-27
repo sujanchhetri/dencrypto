@@ -44,7 +44,7 @@ $(function(){
 		file = e.target.files[0];
 
 		if(file.size > 1024*1024){
-			alert('Please choose files smaller than 1mb, otherwise you may crash your browser. \nThis is a known issue. See the tutorial.');
+			alert('Please choose files smaller than 1mb, otherwise you may crash your browser.');
 			return;
 		}
 
@@ -74,7 +74,7 @@ $(function(){
 
 		input.val('');
 
-		if(password.length<5){
+		if(password.length<7){
 			alert('Please choose a longer password!');
 			return;
 		}
@@ -120,7 +120,7 @@ $(function(){
 										.toString(CryptoJS.enc.Latin1);
 
 				if(!/^data:/.test(decrypted)){
-					alert("Invalid pass phrase or file! Please try again.");
+					alert("Invalid passeord or file! Please try again.");
 					return false;
 				}
 
