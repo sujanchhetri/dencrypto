@@ -56,6 +56,7 @@ body{
 #stage h2{
 	font-weight: normal;
 	font-size: 14px;
+	color:#fff;
 	font-family: Arial, Helvetica, sans-serif;
 	margin: -40px 0 45px;
 	font-style: italic;
@@ -199,15 +200,15 @@ body.decrypt .if-decrypt{
 }
 
 body.encrypt #step2{
-	background-color: maroon;
+	background-color: black;
 }
 
 body.decrypt #step2{
-	background-color: silver;
+	background-color: black;
 }
 
 #step3{
-	background-color:#d5d788;
+	background-color:rgb(39, 94, 53);
 }
 
 #step3 input[type=password]{
@@ -232,8 +233,18 @@ body.decrypt #step2{
 
 #step1 .content{	margin-top: -140px;}
 #step2 .content{	margin-top:-110px;}
-#step3 .content{	margin-top: -157px;}
+#step3 .content{	margin-top: -220px;}
 #step4 .content{	margin-top: -100px;}
 
-
+.column {
+	float: left;
+	width: 50%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
 
