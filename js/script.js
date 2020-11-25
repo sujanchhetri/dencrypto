@@ -43,11 +43,10 @@ $(function(){
 
 		file = e.target.files[0];
 
-		if(file.size > 1024*1024){
-			alert('Please choose files smaller than 1mb, otherwise you may crash your browser.');
+		if(file.size > 1024*1024*10){
+			alert('Please choose files smaller than 10mb, otherwise you may crash your browser.');
 			return;
 		}
-
 		step(3);
 	});
 
