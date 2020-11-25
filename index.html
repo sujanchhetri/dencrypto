@@ -3,7 +3,7 @@
 
 	<head>
 		<meta charset="utf-8"/>
-		<title>JavaScript File Encryption App</title>
+		<title>Dencrypto</title>
 
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -32,56 +32,64 @@
 
 			<div id="step2">
 
-				<div class="content if-encrypt">
-					<h1>Choose A file to encrypt</h1>
-					<h2>An encrypted copy of the file will be generated. No data is saved anywhere except your system.So no worries for data theft.</h2>
-					<a class="button browse blue">Browse</a>
+			<div class="content if-encrypt">
+				<h1>Choose A file to encrypt</h1>
+				<h2>An encrypted copy of the file will be generated. No data is saved anywhere except your system.So no worries for data theft.</h2>
+				<a class="button browse blue">Browse</a>
 
-					<input type="file" id="encrypt-input" />
-				</div>
-
-				<div class="content if-decrypt">
-					<h1>Choose a file to decrypt</h1>
-					<h2>Only files encrypted by this tool are accepted.</h2>
-					<a class="button browse blue">Browse</a>
-
-					<input type="file" id="decrypt-input" />
-				</div>
-
+				<input type="file" id="encrypt-input" />
 			</div>
 
-			<div id="step3">
+			<div class="content if-decrypt">
+				<h1>Choose a file to decrypt</h1>
+				<h2>Only files encrypted by this tool are accepted.</h2>
+				<a class="button browse blue">Browse</a>
 
-				<div class="content if-encrypt">
-					<h1>Enter a password phrase</h1>
-					<h2>This phrase will be used as an encryption key. Write it down or remember it; you won't be able to restore the file without the password. </h2>
-
-					<input type="password" />
-					<a class="button process red">Encrypt!</a>
-				</div>
-
-				<div class="content if-decrypt">
-					<h1>Enter the password phrase</h1>
-					<h2>Enter the password phrase that was used to encrypt this file. It is not possible to decrypt it without the password.</h2>
-
-					<input type="password" />
-					<a class="button process red">Decrypt!</a>
-				</div>
-
+				<input type="file" id="decrypt-input" />
 			</div>
 
-			<div id="step4">
-
-				<div class="content">
-					<h1>Your file is ready!</h1>
-					<a class="button download green">Download</a>
-				</div>
-
-			</div>
 		</div>
 
-		
-	</body>
+		<div id="step3">
+
+			<div class="content if-encrypt">
+				<h1>Enter a password phrase or Use password Generator</h1>
+				<div class="row">
+					<div class="column">
+						<iframe style="border:none;" src="https://sujanchhetri.github.io/passwordgenerator/" height="450" width="500" title="Iframe Example"></iframe>
+					</div>
+					<div class="column">
+						<input type="password" />
+						<a class="button process red">Encrypt!</a>
+						<p>The password phrase will be used as an encryption key. Write it down or remember it; you won't be able to restore the file without the password. </p>
+
+					</div>
+				</div>					
+			</div>
+
+			<div class="content if-decrypt">
+				<h1>Enter the password phrase</h1>
+				<h2>Enter the password phrase that was used to encrypt this file. It is not possible to decrypt it without the password.</h2>
+
+				<input type="password" />
+				
+				<a class="button process red">Decrypt!</a>
+			</div>
+
+		</div>
+
+		<div id="step4">
+
+			<div class="content">
+				<h1>Your file is ready!</h1>
+				<a class="button download green">Download</a>
+			</div>
+
+		</div>
+	</div>
+
+	
+</body>
 
 	<!-- Include the AES algorithm of the crypto library -->
 	<script src="js/aes.js" type="text/JavaScript"></script>
