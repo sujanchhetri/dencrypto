@@ -1,6 +1,9 @@
 # encrypto
 js script for encrypting and decrypting files
 
-https://sujanchhetri.github.io/encrypto/
-or
-https://dencrypto.netlify.app/
+- [x] Encrypt or Decrypt files of size <100mb
+- [x] crypto module
+- [x] AES algorithm
+
+# Demo
+[Dencrypto](https://dencrypto.netlify.app/)
