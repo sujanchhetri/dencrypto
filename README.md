@@ -1,4 +1,4 @@
-# encrypto
+# dencrypto
 js script for encrypting and decrypting files
 
 - [x] Encrypt or Decrypt files of size <50mb
